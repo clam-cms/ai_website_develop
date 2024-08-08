@@ -1,50 +1,184 @@
-body>section {
-    padding: 1rem;
-}
+.logo {
+    height: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-section.usa-banner {
-    padding: 0;
-}
-
-section.usa-hero {
-    padding: 0;
-    background-image: url(/assets/img/ai_hero.jpg);
-}
-
-.usa-hero__callout {
-    background-color: #162e51f5;
-}
-
-section#leveraging,
-section#programs-and-initiatives {
-    border-color: #162e5116;
-}
-
-section#cms-ai-resources {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-section#cms-ai-resources.custom-font {
-    background-color: #162e51;
-    color: white;
-    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
-    line-height: 1.5 !important;
-}
-
-section#cms-ai-resources a {
+.title-banner{
+    background-color: #152e52;
+    vertical-align: middle;
     color: white;
 }
 
-section#cms-ai-resources a:visited {
+
+.section-gray {
+    background-color: #eef0f3;
+}
+
+.button-container-left {
+    text-align: left;
+}
+
+.button-container-center {
+    text-align: center;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0071bc;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:link, 
+.custom-button:visited {
+    color: white; /* Ensure text color stays white even if the user has visited that site*/
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* This is a random color for now, I didn't verify with design system */
     color: white;
 }
 
-.usa-identifier {
-    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: white;
-    background-color: #162e51;
-    padding-bottom: 1rem;
+.heading1 {
+    color: #152e52;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 24px;
 }
+
+.heading2 {
+    color: #152e52;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Start CSS for AI Playbook section */
+.horizontal-container {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    align-items: center; /* Center items vertically if needed */
+}
+
+.left-section {
+    width: 66.66%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-section h1 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.left-section p {
+    margin: 0 0 20px 0;
+}
+
+.principle-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2x2 grid */
+    gap: 20px; /* Space between the items */
+    width: 100%;
+}
+
+.principle-heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.principle-heading .header {
+    display: flex;
+    align-items: center; /* Vertically centers the image and h2 */
+    margin-bottom: 10px; /* Space between the header and the paragraph */
+}
+
+.principle-heading img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Space between the image and the h2 */
+}
+
+.principle-heading h2 {
+    margin: 0; /* Ensures there's no margin around the h2 */
+}
+
+.principle-heading p {
+    font-size: 14px;
+}
+
+.right-section {
+    width: 33.33%;
+}
+
+.right-section img { /* the playbook cover */
+    width: 400px;
+    object-fit: cover;
+}
+/* End CSS for AI Playbook section */
+
+/* Start CSS for custom-table-vertical-borders */
+.custom-table-vertical-borders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+.custom-table-vertical-borders td, .custom-table-vertical-borders th {
+    border-left: 1px solid #939FAF;
+    border-right: 1px solid #939FAF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.custom-table-vertical-borders img {
+    width: 80px;
+    height: auto;
+}
+.custom-table-vertical-borders th, .custom-table-vertical-borders td {
+    padding: 10px;
+}
+
+.custom-table-vertical-borders td {
+    font-size: 14px;
+}
+
+/* End CSS for custom-table-vertical-borders */
+
+/* Start CSS for custom-grid-container-3-item */
+.custom-grid-container-3-item {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+    padding-inline: calc(var(--grid-gutter-width) * .5);
+    /* the three lines above are copied from ds-l-container */
+    
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - (2 * var(--grid-gutter-width))) / 3));
+    column-gap: var(--grid-gutter-width);
+    width: 80%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.custom-grid-item {
+    border: 1px solid #0071bc;
+    border-top-width: 4px; /* Thicker top border */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.custom-grid-item img {
+    height: 100px;
+}
+/* End CSS for custom-grid-container-3-item */
