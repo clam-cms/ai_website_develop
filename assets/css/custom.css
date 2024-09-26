@@ -357,15 +357,10 @@ a:visited {
 
 /* Start CSS for custom-grid-container-3-item */
 .custom-grid-container-3-item {
-    margin-inline: auto;
-    max-width: var(--site-max-width);
-    padding-inline: calc(var(--grid-gutter-width) * .5);
-    /* the three lines above are copied from ds-l-container - this maintains the left/right margins */
-    
     display: grid;
-    grid-template-columns: repeat(3, calc((100% - (2 * var(--grid-gutter-width))) / 3));
+    grid-template-columns: repeat(3, 1fr);
     column-gap: var(--grid-gutter-width);
-    width: 80%;
+    width: 100%;
     padding: 24px;
     box-sizing: border-box;
 }
