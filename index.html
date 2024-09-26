@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial Intelligence at CMS</title>
-    <link rel="stylesheet" href="/ai_website_develop/assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css" />
     <link rel="stylesheet" href="https://design.cms.gov/cdn/design-system/10.0.0-beta.1/css/index.css"/>
     <link rel="stylesheet" href="https://design.cms.gov/cdn/design-system/10.0.0-beta.1/css/core-theme.css"/>
 </head>
@@ -16,7 +16,7 @@
   <ds-usa-banner></ds-usa-banner> <!-- Gray 'official website' banner at the top -->
 
   <!-- Start blue title banner at the top -->
-  <header class="header-footer-banner" class="ds-base--inverse" >
+  <header class="header-footer-banner">
     <div class="horizontal-container-outer">
         
         <div class="left">
@@ -40,9 +40,18 @@
 <!-- End blue title banner at the top -->
 
 <main id="maincontent">
+ <!-- Start hero banner section -->
+ <div class="hero-banner" >
+ <div class="hero-content">
+    <h2 class="heading2">Artificial Intelligence at the Centers for Medicare & Medicaid Services</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</div>
+ <!-- End hero banner section -->
+
   <!-- Start 'AI Playbook' section -->
-<div class="section-gray">
-  <section id="AI_Playbook" class="ds-l-container">
+<div class="section-gray-light">
+  <section id="AI_Playbook">
     <div class="horizontal-container"> <!-- flex container, cover img moves down -->
     <div class="left-section">
         <div>
@@ -92,7 +101,7 @@
         </div>
         <div class="button-container-left">
             <!-- Download Playbook button -->
-            <a href="ai_website_develop/assets/CMS_AI_Playbook_3_Final.pdf" download="CMS_AI_Playbook_v3.pdf" class="custom-button">Download the Playbook</a>
+            <a href="/ai_website_develop/playbook.pdf" download="playbook.pdf" class="custom-button">Download the Playbook</a>
         </div>
     </div>
     <div class="right-section">
@@ -104,6 +113,7 @@
   <!-- End 'AI Playbook' section -->
 
     <!-- Start 'Transforming Healthcare with AI' section -->
+    <div class="section-gray-dark">
     <section id="Transforming_Healthcare" class="ds-l-container">
         <h2 class="heading2">
             <span>Transforming Healthcare with AI</span>
@@ -119,7 +129,7 @@
             </div>
             <div class="flex-item">
                 <img src="/ai_website_develop/assets/img/3b_Make_Data_Driven.png" alt="">
-                <h3 class="heading3">Make Data Driven AI Decisions</h3>
+                <h3 class="heading3">Make Data Driven Decisions</h3>
                 <p>Managing health care data more effectively, enabling CMS to make data-driven decisions that improve program management and policy formulation.</p>
             </div>
             <div class="flex-item">
@@ -139,11 +149,11 @@
             </div>
         </div>
     </section>
-    
+    </div>
       <!-- End 'Transforming Healthcare with AI' section -->
 
           <!-- Start 'Aligning with Federal Policies' section -->
-          <div class="section-gray">
+          <div class="section-gray-light">
     <section id="Aligning_with_Federal_Policies">
         <div class="ds-l-container">
             <h2 class="heading2">
@@ -154,11 +164,10 @@
         <div class="custom-grid-container-3-item" >  <!-- horizontal default, vertical stack when browser window narrows -->
             <div class="custom-grid-item">
                 <img src="/ai_website_develop/assets/img/4a_Executive_Order.png" alt="White House Logo">
-                <h3 class="heading3">Executive Order 13859:
-                    Maintaining American Leadership 
-                    in Artificial Intelligence</h3>
+                <h3 class="heading3">Executive Order 14110:
+                    Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence</h3>
                     <div class="button-container-center">
-                        <a href="https://www.federalregister.gov/documents/2019/02/14/2019-02544/maintaining-american-leadership-in-artificial-intelligence" target="_blank" class="custom-button">Read the Exective Order</a>
+                        <a href="https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence" target="_blank" class="custom-button">Read the Exective Order</a>
                     </div>
             </div>
             <div class="custom-grid-item">
@@ -179,44 +188,11 @@
     </section>
 </div>
     <!-- End 'Aligning with Federal Policies' section -->
-
-    <!-- Start 'AI Enablement' section -->
-    <section id="AI_Enablement" class="ds-l-container">
-        <h2 class="heading2">
-            <span>AI Enablement</span>
-        </h2>
-        <p>
-            The Office of Information Technology provides employees with opportunities for AI exploration, research, and training.
-        </p>
-        <div class="flex-container">  <!-- horizontal default, vertical stack when browser window narrows -->
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/5a_AI_Workspace.png" alt="">
-                <h3 class="heading3">AI Workspace</h3>
-                <p>The AI Workspace is a development environment that enables AI teams to build AI-based proof of concepts, facilitating experimentation and fostering AI organizational maturity.</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/5b_AI_Consulting.png" alt="">
-                <h3 class="heading3">AI Consulting</h3>
-                <p>We support teams in understanding how AI technology and responsible AI practices can be applied to various business use cases, as well as the prerequisites for using AI.</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/5c_AI_Explorers.png" alt="">
-                <h3 class="heading3">AI Explorers Program</h3>
-                <p>The AI Explorers Program supports AI organizational maturity at CMS by conducting technical research and development, supporting AI pilots within CMS components, conducting policy research, and engaging the CMS AI community.</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/5d_Workforce_Resilience_Training.png" alt="">
-                <h3 class="heading3">Workforce Resilience Training</h3>
-                <p>CMS provides cohort-style training in AI, ML, and Data Science for employees who range from curious to passionate about emerging tools and technologies. We help learners develop knowledge, skills, and practical experience needed to stay current with evolving technologies.</p>
-            </div>
-        </div>
-    </section>
-    <!-- End 'AI Enablement' section -->
 </main>
 
     <!-- Start blue footer -->
 
-    <footer class="header-footer-banner" class="ds-base--inverse">
+    <footer class="header-footer-banner">
         <div class="horizontal-container-outer"><a href="https://cms.gov"  aria-label="CMS logo navigates to the official CMS website" class="transparent-focus"><img class="logo"
             src="/ai_website_develop/assets/img/1_Header_cms-logo-white.png" alt="Centers for Medicare & Medicaid Services (CMS) logo"/></a>
 </div>
