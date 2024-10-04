@@ -41,7 +41,7 @@ body {
     margin-inline: auto;
     max-width: var(--site-max-width);
 
-    background: url('/ai_website_develop/assets/img/AI_Website_Hero_Sample.png') no-repeat center center;
+    background: url('/ai_website_develop/assets/img/Medical_Tablet_Hero.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: left;
@@ -351,6 +351,18 @@ a:visited {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+}
+
+/* Additional media query for smaller mobile screens */
+@media screen and (max-width: 768px) {
+    .flex-item h3 {
+        width: auto; /* Allow full width for headings */
+        font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+    }
+
+    .flex-item p {
+        font-size: .85rem; /* Slightly reduce paragraph font size for readability */
     }
 }
 /* End CSS for flex-container-vertical-borders */
