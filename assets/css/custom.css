@@ -37,6 +37,8 @@ body {
     text-align: right;
 }
 
+
+/* Start CSS for Hero section */
 .hero-banner {
     margin-inline: auto;
     max-width: var(--site-max-width);
@@ -52,7 +54,7 @@ body {
 
 .hero-content {
     width: 66%;
-    padding: 32px 64px 64px 64px;
+    padding: 32px 64px 64px 36px;
     font-size: .875rem;
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
 }
@@ -60,8 +62,10 @@ body {
 @media (max-width: 768px) {
     .hero-content {
         width: 100%;
+        padding: 32px 36px 64px 36px;
     }
 }
+/* End CSS for Hero section */
 
 .section-gray-dark {
     margin-inline: auto;
@@ -140,13 +144,17 @@ a:visited {
     font-weight: bold;
     margin-top: 24px;
 }
+@media (max-width: 768px) {
+    .heading2 {
+        font-size: 1.5rem;
+    }
+}
 
 .heading3 {
     color: #152e52;
     font-size: 1rem;
     font-weight: bold;
 }
-
 
 .horizontal-container-outer {
     margin-inline: auto;
@@ -346,23 +354,52 @@ a:visited {
         font-size: .875rem;
         flex-grow: 1; /* Ensure paragraph text grows to fill available space */
     }
-
-    .flex-item .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
 }
 
 /* Additional media query for smaller mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0; /* No gap between items */
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Add a border on top */
+        border-bottom: 1px solid #939FAF; /* Add a border on bottom */
+    }
+
+    .flex-item {
+        display: flex; /* Display items horizontally */
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0; /* Vertical padding */
+        border-left: none; /* Remove left and right borders */
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Horizontal border between items */
+        border-bottom: 0;
+        text-align: left;
+    }
+
+    .flex-item img {
+        margin: 0;
+        }
+
     .flex-item h3 {
-        width: auto; /* Allow full width for headings */
-        font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+        margin: 0;
+        padding: 12px;
+        min-width: auto; 
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1; /* Ensure paragraph text grows to fill available space */
     }
 
     .flex-item p {
-        font-size: .85rem; /* Slightly reduce paragraph font size for readability */
+        margin-top: 0;
+        font-size: .875rem;
+        text-align: center;
     }
 }
 /* End CSS for flex-container-vertical-borders */
