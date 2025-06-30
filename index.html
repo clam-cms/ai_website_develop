@@ -8,218 +8,248 @@
     <link rel="stylesheet" href="/ai_website_develop/assets/css/custom.css" />
     <link rel="stylesheet" href="https://design.cms.gov/cdn/design-system/10.0.0-beta.1/css/index.css"/>
     <link rel="stylesheet" href="https://design.cms.gov/cdn/design-system/10.0.0-beta.1/css/core-theme.css"/>
+
+    <!-- <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=HHS&subagency=CMS"></script> -->
 </head>
 
-<body class="ds-base">
-    <a href="#maincontent" class="sr-only">Skip to main content</a> <!-- Hidden skip link for screen readers -->
+<body>
 
-  <ds-usa-banner></ds-usa-banner> <!-- Gray 'official website' banner at the top -->
-
-  <!-- Start blue title banner at the top -->
-  <header class="header-footer-banner">
-    <div class="horizontal-container-outer">
-        
-        <div class="left">
-            <a href="https://cms.gov" aria-label="CMS logo navigates to the official CMS website" class="transparent-focus"><img class="logo"
-            src="/ai_website_develop/assets/img/1_Header_cms-logo-white.png" alt="Centers for Medicare & Medicaid Services (CMS) logo"/></a>
-            <h1 class="title-text">Artificial Intelligence at CMS</h1>
-        </div>
-        <div class="right" style="display: none">
-
-             <form id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
-                <input type="hidden" name="affiliate" id="affiliate" value="ai-cms" autocomplete="off" />
-                <label for="query">Search</label>
-                <input type="text" name="query" id="query" autocomplete="off" class="usagov-search-autocomplete" placeholder="Search AI at CMS"/>
-                <input type="submit" name="commit" value="Search" data-disable-with="Search" />
-              </form>  
-        </div>     
-    </div>
-</header>
-<!-- End blue title banner at the top -->
-
-<main id="maincontent">
- <!-- Start hero banner section -->
- <div class="hero-banner" >
- <div class="hero-content">
-    <h2 class="heading2">Artificial Intelligence at the Centers for Medicare & Medicaid Services</h2>
-    <p>CMS has long recognized the potential of Artificial Intelligence (AI) to revolutionize healthcare delivery and operations. Our efforts have yielded insights captured in the CMS AI Playbook, a comprehensive guide that continues to improve along with our understanding of AI best practices. This site offers access to the CMS AI Playbook and other federal resources, equipping the CMS community and partners with knowledge to leverage AI responsibly and effectively.</p>
-</div>
-</div>
- <!-- End hero banner section -->
-
-  <!-- Start 'AI Playbook' section -->
-<div class="section-gray-light">
-  <section id="AI_Playbook">
-    <div class="horizontal-container"> <!-- flex container, cover img moves down -->
-    <div class="left-section">
-        <div>
-            <h2 class="heading2">CMS AI Playbook</h2>
-            <p>The CMS AI Playbook provides readers a one-stop shop to dive responsibly into AI development, ensuring CMS teams are equipped to use AI responsibly and effectively.</p>
-            <div class="principle-table">
-                <div class="principle-heading">
-                    <div class="header">
-                        <img src="/ai_website_develop/assets/img/2a_Human_Centered_AI.png" alt="">
-                        <h3 class="heading3">Human-Centered AI</h3>
+    <!-- Start government website banner  -->
+    <section class="usa-banner" aria-label="Official website of the United States government">
+        <div class="usa-accordion">
+            <header class="usa-banner__header">
+                <div class="usa-banner__inner">
+                    <div class="grid-col-auto">
+                        <img aria-hidden="true" class="usa-banner__header-flag" src="/ai_website_develop/assets/img/us_flag_small.png"
+                            alt="" />
                     </div>
-                    <p>Human-centered AI (HCAI) addresses the needs and 
-                        prioritizes the well-being of end users and society, 
-                        emphasizing the human-centered practices throughout 
-                        the design and development process.</p>
-                </div>
-                <div class="principle-heading">
-                    <div class="header">
-                        <img src="/ai_website_develop/assets/img/2c_Well_Grounded_Data_Driven_AI.png" alt="">
-                        <h3 class="heading3">Well-Grounded & Data Driven AI</h3>
+                    <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                        <p class="usa-banner__header-text">
+                            An official website of the United States government
+                        </p>
+                        <p class="usa-banner__header-action">Here’s how you know</p>
                     </div>
-                    <p>Well-grounded and data-driven AI addresses the needs 
-                        of AI tools and models, ensuring that they are based on 
-                        the right information for the right task.</p>
+                    <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false"
+                        aria-controls="gov-banner-default-default">
+                        <span class="usa-banner__button-text">Here’s how you know</span>
+                    </button>
                 </div>
-                <div class="principle-heading">
-                    <div class="header">
-                        <img src="/ai_website_develop/assets/img/2b_Appro_Scaled_AI.png" alt="">
-                        <h3 class="heading3">Appropriately Scaled & Interoperable AI</h3>
+            </header>
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner-default-default">
+                <div class="grid-row grid-gap-lg">
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="/ai_website_develop/assets/img/icon-dot-gov.svg" role="img"
+                            alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Official websites use .gov</strong><br />A
+                                <strong>.gov</strong> website belongs to an official government
+                                organization in the United States.
+                            </p>
+                        </div>
                     </div>
-                    <p>Appropriately scaled and interoperable AI addresses the 
-                        needs of agency integration, ensuring AI adoption within 
-                        CMS is incremental and can adapt to the agency’s 
-                        needs.</p>
-                </div>
-                <div class="principle-heading">
-                    <div class="header">
-                        <img src="/ai_website_develop/assets/img/2d_Responsible_AI.png" alt="">
-                        <h3 class="heading3">Responsible AI</h3>
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="/ai_website_develop/assets/img/icon-https.svg" role="img"
+                            alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Secure .gov websites use HTTPS</strong><br />A
+                                <strong>lock</strong> (
+                                <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
+                                        viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
+                                        aria-labelledby="banner-lock-description-default" focusable="false">
+                                        <title id="banner-lock-title-default">Lock</title>
+                                        <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                                        <path fill="#000000" fill-rule="evenodd"
+                                            d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                                    </svg> </span>) or <strong>https://</strong> means you’ve safely connected to
+                                the .gov website. Share sensitive information only on official,
+                                secure websites.
+                            </p>
+                        </div>
                     </div>
-                    <p>Responsible AI (RAI) addresses the needs of industry 
-                        ethics, applying trustworthy best practices and federal 
-                        guidance to balance the complexity of moral principles 
-                        and system requirements.</p>
                 </div>
-            </div>
-        </div>
-        <div class="button-container-left">
-            <!-- Download Playbook button -->
-            <a href="/ai_website_develop/playbook.pdf" download="CMS_AI_Playbook.pdf" class="custom-button">Download the Playbook</a>
-        </div>
-    </div>
-    <div class="right-section">
-        <img src="/ai_website_develop/assets/img/2e_Playbook.png" alt="CMS AI Playbook Cover Image">
-    </div>
-    </div>
-</section>
-</div>
-  <!-- End 'AI Playbook' section -->
-
-    <!-- Start 'Leveraging AI to Support CMS' section -->
-    <div class="section-gray-dark">
-    <section id="Leveraging AI to Support CMS" class="ds-l-container">
-        <h2 class="heading2">
-            <span>Leveraging AI to Support CMS</span>
-        </h2>
-        <p>
-            As AI maturity increases across the organization, we aim to leverage AI capabilities to support CMS in advancing healthcare quality, accessibility, efficiency, and affordability for Medicare and Medicaid beneficiaries. Our key focus areas include:
-        </p>
-        <div class="flex-container"> <!-- horizontal default, vertical stack when browser window narrows -->
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/3a_Enhance_Op_Efficiency.png" alt="">
-                <h3 class="heading3">Enhance Operational Efficiency</h3>
-                <p>Enhancing operational efficiency, such as automating administrative tasks, streamlining claims processing, and optimizing resource allocation</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/3b_Make_Data_Driven.png" alt="">
-                <h3 class="heading3">Make Data Driven Decisions</h3>
-                <p>Managing health care data more effectively, enabling CMS to make data-driven decisions that improve program management and policy formulation.</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/3c_Support_Equitable_Access.png" alt="">
-                <h3 class="heading3">Support Equitable Access</h3>
-                <p>Supporting equitable access to healthcare services, addressing disparities, and ensuring beneficiaries receive high-quality care.</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/3d_Assure_Compliance.png" alt="">
-                <h3 class="heading3">Assure Compliance & Quality</h3>
-                <p>Assuring compliance and quality by monitoring healthcare providers' compliance with CMS standards and regulations</p>
-            </div>
-            <div class="flex-item">
-                <img src="/ai_website_develop/assets/img/3e_Identify_Savings.png" alt="">
-                <h3 class="heading3">Identify Savings & Reduce Waste</h3>
-                <p>Identifying cost-saving opportunities, reducing waste, and making healthcare more affordable for beneficiaries and the government.</p>
             </div>
         </div>
     </section>
-    </div>
-      <!-- End 'Leveraging AI to Support CMS' section -->
+    <!-- End government website banner -->
 
-          <!-- Start 'Aligning with Federal Policies' section -->
-          <div class="section-gray-light">
-    <section id="Aligning_with_Federal_Policies">
-        <div class="ds-l-container">
-            <h2 class="heading2">
-                <span>Aligning with Federal Policies</span>
-            </h2>
-            <p>The CMS AI Playbook aligns with AI federal policies and the Health and Human Services Trustworthy AI Playbook.</p>
-        </div>
-        <div class="custom-grid-container-3-item" >  <!-- horizontal default, vertical stack when browser window narrows -->
-            <div class="custom-grid-item">
-                <img src="/ai_website_develop/assets/img/4a_Executive_Order.png" alt="White House Logo">
-                <h3 class="heading3">Executive Order 14110:
-                    Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence</h3>
-                    <div class="button-container-center">
-                        <a href="https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence" target="_blank" class="custom-button">Read the Exective Order</a>
-                    </div>
-            </div>
-            <div class="custom-grid-item">
-                <img src="/ai_website_develop/assets/img/4b_National_AI_Initiative.png" alt="National Artificial Intelligence Initiative Office Logo">
-                <h3 class="heading3">National Artificial Intelligence Initiative</h3>
-                    <div class="button-container-center">
-                        <a href="https://ai.gov/" target="_blank" class="custom-button">Visit AI.gov</a>
-                    </div>
-            </div>
-            <div class="custom-grid-item">
-                <img src="/ai_website_develop/assets/img/4c_HHS_TAI.png" alt="Dept of Health and Human Services Logo">
-                <h3 class="heading3">HHS Trustworthy AI Playbook</h3>
-                    <div class="button-container-center">
-                        <a href="https://www.hhs.gov/sites/default/files/hhs-trustworthy-ai-playbook.pdf" target="_blank" class="custom-button">Read the HHS TAI Playbook</a>
-                    </div>
-            </div>
-        </div>
-    </section>
-</div>
-    <!-- End 'Aligning with Federal Policies' section -->
-</main>
 
-    <!-- Start blue footer -->
-
-    <footer class="header-footer-banner">
-        <div class="horizontal-container-outer"><a href="https://cms.gov"  aria-label="CMS logo navigates to the official CMS website" class="transparent-focus"><img class="logo"
-            src="/ai_website_develop/assets/img/1_Header_cms-logo-white.png" alt="Centers for Medicare & Medicaid Services (CMS) logo"/></a>
-</div>
-            <div class="horizontal-container-outer">
-                <p class="left">A federal government website managed by <br>
-                    Centers for Medicare and Medicaid Services</p>
-                <p class="right">Contact Us <br>
-                    <a class="contact" href="mailto:ai@cms.hhs.gov" target="_blank">ai@cms.hhs.gov</a>
+    <section class="usa-hero grid-container" aria-label="Introduction">
+        <div class="">
+            <div class="usa-hero__callout">
+                <h1 class="usa-hero__heading">
+                    <span class="usa-hero__heading--alt">Artificial Intelligence at CMS</span>
+                </h1>
+                <p>
+                    At CMS, Artificial Intelligence (AI) has the power to reshape the way we use data to make 
+                    decisions. Given CMS's vast data resources, we have an unprecedented opportunity to drive 
+                    innovation, boost productivity, and enhance service delivery through AI.
+                </p>
+                <p>
+                    This website conveys CMS's resolve to strategically leverage AI in alignment with Federal and agency values.
                 </p>
             </div>
-    </footer>
-    <!-- End blue footer -->      
+        </div>
+    </section>
 
-    <!--
-      Must load the JavaScript after your page HTML or else it won't evaluate
-      the custom design-system elements that already exist on the page
-    -->
-    <script src="https://design.cms.gov/cdn/design-system/10.0.0-beta.1/web-components/bundle/web-components.js"></script>
-    <!-- <script> //Type-ahead search and Search.gov Tag Snippet
-        //<![CDATA[
-              var usasearch_config = { siteHandle:"ai-cms" };
-        
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.src = "//search.usa.gov/javascripts/remote.loader.js";
-              document.getElementsByTagName("head")[0].appendChild(script);
-        
-        //]]>
-        </script> -->
+    <section id="leveraging" class="grid-container border-left border-right">
+        <div class="grid-row">
+            <div class=".tablet:grid-col">
+                <h1>Leveraging the power of AI to serve America's healthcare needs</h1>
+                <div>
+                    <p>
+                        With more than 150 million Americans enrolled in Medicare, Medicaid, and the Children’s Health
+                        Insurance Program, CMS possesses one of the most robust data portfolios in the federal
+                        government. We house patient and provider claims, beneficiary enrollments, and medical
+                        records, along with internal data such as budget documents and contract records. 
+                        AI will play a key role in leveraging all of this data to drive 
+                        innovation and enhance operational excellence across our programs. 
+                    </p>
+                    <p>
+                        As defined by for the Department of Health and Human Services by the <a class="usa-link"
+                                    href="https://www.healthit.gov/topic/artificial-intelligence"
+                                    target="_blank">Assistant Secretary for Technology Policy</a>, “AI enables computer systems to 
+                        perform tasks normally requiring human intelligence.” AI can analyze data, automate 
+                        labor-intensive processes, find operational efficiencies, provide business insights, 
+                        interact with customers, make predictions, optimize service delivery,
+                        and reveal new ways of solving problems. In short, AI is an emerging technology that will
+                        revolutionize CMS operations and customer experience for the public we serve.                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cms-ai-resources" class="custom-font grid-container">
+        <div class="usa-card__heading">
+            <h2>AI Resources</h2>
+        </div>
+        <p style="max-width: 1200px">
+            Those who wish to engage in AI-related activities, as either a CMS employee, partner, or vendor, should
+            be aware of federal policies regarding the application of AI. Following are links to foundational 
+            governance documents on AI and other related resources:
+        </p>
+        <div class="grid-row grid-gap-lg">
+            <div class="tablet:grid-col desktop-lg:grid-col-3">
+                <ul class="usa-collection">
+                    <li class="usa-collection__item">
+                        <div class="usa-collection__body">
+                            <h3 class="usa-collection__heading">
+                                <a class="usa-link"
+                                    href="https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/"
+                                    target="_blank">
+                                    Executive Order 14179: Removing Barriers to American Leadership in Artificial Intelligence</a>
+                            </h3>
+                            <p class="usa-collection__description">
+                                This 2025 Executive Order sets forth policy to sustain and enhance America's global 
+                                AI dominance in order to promote human flourishing, economic competitiveness, and national 
+                                security by revoking certain existing AI policies and directives that act as barriers to 
+                                American AI innovation, including those listed in the 
+                                <a class="usa-link"
+                                    href="https://www.whitehouse.gov/presidential-actions/2025/01/initial-rescissions-of-harmful-executive-orders-and-actions/"
+                                    target="_blank">
+                                    Initial Rescissions of Harmful Executive Orders and Actions</a>.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tablet:grid-col desktop-lg:grid-col-5">
+                <ul class="usa-collection">
+                    <li class="usa-collection__item">
+                        <div class="usa-collection__body">
+                            <h3 class="usa-collection__heading">
+                                <a class="usa-link"
+                                    href="https://www.congress.gov/116/crpt/hrpt617/CRPT-116hrpt617.pdf#page=1210"
+                                    target="_blank">
+                                    National Artificial Intelligence Act of 2020</a>
+                            </h3>
+                            <p class="usa-collection__description">
+                                The National AI Initiative Act of 2020 <a
+                                    href="https://www.congress.gov/bill/116th-congress/house-bill/6216" target="_blank">
+                                    (DIVISION E, SEC. 5001)</a> became law on January 1, 2021, providing for a
+                                coordinated program across the entire Federal government to accelerate AI research and
+                                application for the Nation’s economic prosperity and national security. The mission of
+                                the National AI Initiative is to ensure continued U.S.leadership in AI research and
+                                development, lead the world in the development and use of trustworthy AI in the public
+                                and private sectors, and prepare the present and future U.S. workforce for the
+                                integration of AI systems across all sectors of the economy and society.
+                            </p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    
+    <footer class="usa-footer site-footer">
+        <div class="usa-identifier">
+            <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier,">
+                <div class="usa-identifier__container">
+                    <div class="usa-identifier__logos">
+                        <a href="https://cms.gov" class="usa-identifier__logo" target="_blank"><img class="usa-identifier__logo-img"
+                                src="/ai_website_develop/assets/img/cms-logo.png" alt="&lt;Parent agency&gt; logo" role="img" /></a>
+                    </div>
+                    <div class="usa-identifier__identity" aria-label="Agency description">
+                        <p class="usa-identifier__identity-domain">ai.cms.gov</p>
+                        <p class="usa-identifier__identity-disclaimer">
+                            An official website of 
+                            <a href="https://www.cms.gov">The Centers for Medicare & Medicaid Services</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links,">
+                <div class="usa-identifier__container">
+                    <ul class="usa-identifier__required-links-list">
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/About-CMS/About-CMS"
+                                class="usa-identifier__required-link usa-link">About CMS</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/Policiesforaccessibility"
+                                class="usa-identifier__required-link usa-link">Accessibility support</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/Regulations-and-Guidance/Legislation/FOIA"
+                                class="usa-identifier__required-link usa-link">FOIA requests</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/NoFearAct"
+                                class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.oig.hhs.gov/" class="usa-identifier__required-link usa-link">Office of
+                                the Inspector General</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/About-CMS/Agency-Information/PerformanceBudget"
+                                class="usa-identifier__required-link usa-link">Performance reports</a>
+                        </li>
+                        <li class="usa-identifier__required-links-item">
+                            <a href="https://www.cms.gov/privacy" class="usa-identifier__required-link usa-link">Privacy
+                                policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="usa-identifier__section usa-identifier__section--usagov"
+                aria-label="U.S. government information and services,">
+                <div class="usa-identifier__container">
+                    <div class="usa-identifier__usagov-description">
+                        Looking for U.S. government information and services?
+                    </div>
+                    <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="/ai_website_develop/assets/uswds/js/uswds.min.js"></script>
 </body>
 
 </html>
