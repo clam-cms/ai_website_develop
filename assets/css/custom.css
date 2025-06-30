@@ -1,50 +1,459 @@
-body>section {
-    padding: 1rem;
+html {
+    font-size: 16px; /* Base font size for desktop */
 }
 
-section.usa-banner {
-    padding: 0;
-}
-
-section.usa-hero {
-    padding: 0;
-    background-image: url(/ai_website_develop/assets/img/ai_hero.jpg);
-}
-
-.usa-hero__callout {
-    background-color: #162e51f5;
-}
-
-section#leveraging,
-section#programs-and-initiatives {
-    border-color: #162e5116;
-}
-
-section#cms-ai-resources {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-section#cms-ai-resources.custom-font {
-    background-color: #162e51;
-    color: white;
+body {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
-    line-height: 1.5 !important;
 }
 
-section#cms-ai-resources a {
+.sr-only { /* screen reader only (e.g., skip link) */
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+.logo {
+    height: 50px;
+    padding-right: 24px;
+  }
+
+.header-footer-banner{
+    background-color: #152e52;
     color: white;
+    font-size: .75rem;
+    padding: 24px;
 }
 
-section#cms-ai-resources a:visited {
-    color: white;
+.left {
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
-.usa-identifier {
-    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+.right {
+    text-align: right;
+}
+
+
+/* Start CSS for Hero section */
+.hero-banner {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+
+    background: url('/ai_website_develop/assets/img/Medical_Tablet_Hero.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.hero-content {
+    width: 66%;
+    padding: 32px 64px 64px 36px;
+    font-size: .875rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        width: 100%;
+        padding: 32px 36px 64px 36px;
+    }
+}
+/* End CSS for Hero section */
+
+.section-gray-dark {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+    padding-inline: calc(var(--grid-gutter-width) * .5);
+    /* the three lines above are copied from ds-l-container - this maintains the left/right margins */
+    background-color: #eef0f3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.section-gray-light {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+    padding-inline: calc(var(--grid-gutter-width) * .5);
+    /* the three lines above are copied from ds-l-container - this maintains the left/right margins */
+    background-color: #f9fafb;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.button-container-left {
+    text-align: left;
+}
+
+.button-container-center {
+    text-align: center;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 1rem;
-    line-height: 1.4;
     color: white;
-    background-color: #162e51;
-    padding-bottom: 1rem;
+    background-color: #0071bc;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
 }
+
+a:link,
+a:visited {
+    color: white; /* Ensure text color stays white even if the user has visited that site*/
+}
+.contact:hover { /* ai@cms.hhs.gov in footer */
+    color: #4d9cd0 !important; /* Hover state: change color to --color-primary-light (ocean-300)*/ 
+}
+
+.custom-button:link, 
+.custom-button:visited {
+    color: white; /* Ensure text color stays white even if the user has visited that site*/
+}
+.custom-button:hover {
+    background-color: #152e52;
+    color: white;
+}
+.custom-button:focus, a:focus{
+    color: black !important;   /* Change the white text to black since the  background becomes white */ 
+}
+
+.transparent-focus:focus{
+    background-color: transparent;
+}
+
+.title-text{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.heading2 {
+    color: #152e52;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 24px;
+}
+@media (max-width: 768px) {
+    .heading2 {
+        font-size: 1.5rem;
+    }
+}
+
+.heading3 {
+    color: #152e52;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.horizontal-container-outer {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+    padding-inline: calc(var(--grid-gutter-width) * .5);
+    /* the three lines above are copied from ds-l-container - this maintains the left/right margins */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Start CSS for AI Playbook section */
+.horizontal-container {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    align-items: center; /* Center items vertically if needed */
+    flex-wrap: wrap; /* Allow wrapping of items (i.e., the Playbook cover image) */
+}
+
+.left-section {
+    width: 66.66%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-section h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.left-section p {
+    margin: 0 0 20px 0;
+}
+
+.principle-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2x2 grid */
+    gap: 20px; /* Space between the items */
+    width: 100%;
+}
+
+.principle-heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.principle-heading .header {
+    display: flex;
+    align-items: center; /* Vertically centers the image and h3 */
+    margin-bottom: 10px; /* Space between the header and the paragraph */
+}
+
+.principle-heading img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Space between the image and the h3 */
+}
+
+.principle-heading h3 {
+    margin: 0; /* Ensures there's no margin around the h3 */
+}
+
+.principle-heading p {
+    font-size: .875rem;
+}
+
+.right-section {
+    width: 33.33%;
+    text-align: center; 
+}
+
+.right-section img { /* the playbook cover */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .left-section, .right-section {
+        width: 100%; /* Make both sections take full width */
+    }
+
+    .right-section {
+        margin-top: 20px; /* Add space between the content and the image */
+    }
+
+    .principle-table {
+        grid-template-columns: 1fr; /* Make the principle table a single column */
+    }
+}
+/* End CSS for AI Playbook section */
+
+/* Start CSS for flex-container-vertical-borders */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap; /* Items will try to stay on one line */
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 0; /* No gap between items */
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.flex-item {
+    flex: 1;
+    box-sizing: border-box;
+    border-left: 1px solid #939FAF;
+    padding: 16px;
+    text-align: center;
+}
+
+.flex-item:last-child {
+    border-right: 1px solid #939FAF;
+}
+
+.flex-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 16px; /* Space between the image and the heading */
+}
+
+.flex-item h3 {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 164px; /* Ensure consistent width for alignment */
+    max-width: 164px; /* Prevent overflow, adjust this value as needed */
+    height: 60px; /* Set a fixed height for consistent alignment */
+    display: flex;
+    justify-content: center; /* Horizontally center the text within the heading */
+    text-align: center;
+}
+
+.flex-item p {
+    font-size: .875rem;
+    margin-top: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 1024px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0; /* No gap between items */
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Add a border on top */
+        border-bottom: 1px solid #939FAF; /* Add a border on bottom */
+    }
+
+    .flex-item {
+        display: flex; /* Display items horizontally */
+        flex-direction: row;
+        align-items: flex-start; /* Align items at the top */
+        padding: 16px 0; /* Vertical padding */
+        border-left: none; /* Remove left and right borders */
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Horizontal border between items */
+        border-bottom: 0;
+        text-align: left;
+    }
+
+    .flex-item:first-child {
+        border-top: 0px;
+    }
+
+    .flex-item:last-child {
+        border-right: 0px;
+    }
+
+    .flex-item img {
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 16px; /* Space between image and text */
+        width: 50px; /* Reduce the size of the image for the smaller layout */
+    }
+
+    .flex-item h3 {
+        margin-top: 0;
+        margin-right: 16px; /* Space between heading and paragraph */
+        width: 164px; /* Ensure consistent width for alignment */
+        font-size: 1rem;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .flex-item p {
+        margin-top: 0;
+        font-size: .875rem;
+        flex-grow: 1; /* Ensure paragraph text grows to fill available space */
+    }
+}
+
+/* Additional media query for smaller mobile screens */
+@media screen and (max-width: 480px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0; /* No gap between items */
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Add a border on top */
+        border-bottom: 1px solid #939FAF; /* Add a border on bottom */
+    }
+
+    .flex-item {
+        display: flex; /* Display items horizontally */
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0; /* Vertical padding */
+        border-left: none; /* Remove left and right borders */
+        border-right: none;
+        border-top: 1px solid #939FAF; /* Horizontal border between items */
+        border-bottom: 0;
+        text-align: left;
+    }
+
+    .flex-item img {
+        margin: 0;
+        }
+
+    .flex-item h3 {
+        margin: 0;
+        padding: 12px;
+        min-width: auto; 
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1; /* Ensure paragraph text grows to fill available space */
+    }
+
+    .flex-item p {
+        margin-top: 0;
+        font-size: .875rem;
+        text-align: center;
+    }
+}
+/* End CSS for flex-container-vertical-borders */
+
+/* Start CSS for custom-grid-container-3-item */
+.custom-grid-container-3-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--grid-gutter-width);
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.custom-grid-item {
+    border: 1px solid #0071bc;
+    border-top-width: 4px; /* Thicker top border */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure items stretch equally */
+}
+
+.custom-grid-item img {
+    height: 100px;
+    margin-bottom: 8px; /* Add some space below the image */
+}
+
+.custom-grid-item h3 {
+    margin: 16px 0;
+}
+
+.custom-grid-item .button-container-center {
+    margin-top: 16px;
+    width: 100%; /* Ensure the button container spans the full width */
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .custom-grid-container-3-item {
+        grid-template-columns: 1fr; /* Change to 1 column */
+        row-gap: 20px; /* Add some space between the rows */
+    }
+
+    .custom-grid-item {
+        width: 100%; /* Ensure items take full width of the container */
+    }
+}
+/* End CSS for custom-grid-container-3-item */
